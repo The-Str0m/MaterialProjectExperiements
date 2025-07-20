@@ -2,7 +2,7 @@ from mp_api.client import MPRester
 from ase.visualize import view
 from pymatgen.io.ase import AseAtomsAdaptor
 
-with MPRester("yQ1u3WrfYKDCHDtpke7iPYVq86jKwhyx") as mpr:
+with MPRester("your-api-key") as mpr:
     chemical_formula = input('Enter a molecule ')
     docs = mpr.materials.summary.search(
             formula=[chemical_formula], fields=["material_id"]
