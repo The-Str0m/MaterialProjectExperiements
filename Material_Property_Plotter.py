@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 import re
 
-with MPRester("your-api-here") as mpr:
+with MPRester("your-api-key") as mpr:
     chemical_formula = input("Enter an element or compound: ")
     count = len(re.findall(r'[A-Z]', chemical_formula))
     band_gaps = []
